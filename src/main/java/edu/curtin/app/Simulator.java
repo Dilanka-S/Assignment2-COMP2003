@@ -1,6 +1,6 @@
 package edu.curtin.app;
 
-public class App
+public class Simulator
 {
     public static void main(String[] args)
     {
