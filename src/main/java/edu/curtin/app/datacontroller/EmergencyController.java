@@ -1,4 +1,4 @@
 package edu.curtin.app.datacontroller;
 
-public class Controller {
+public class EmergencyController {
 }

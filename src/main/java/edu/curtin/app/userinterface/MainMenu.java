@@ -27,9 +27,12 @@ public class MainMenu {
                     //to check if the file is valid initially so that the while loop can remain active
                     Scanner tempScanner = new Scanner(new File(filename));
                     FileReader.readFile(tempScanner);
+                    tempScanner.close();
                 }
             }
             sc.close();
+
+
         }
         catch (FileNotFoundException fileNotFoundException){
             System.out.println("Please the check the filename provided since it cannot be found : "

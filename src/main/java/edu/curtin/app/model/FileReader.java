@@ -2,16 +2,16 @@ package edu.curtin.app.model;
 
 //import java.io.*;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class FileReader {
     public static void readFile(Scanner fileScanner){
         //Scanner fileScanner = new Scanner(new File(filename));
-        int time = 0;
+        int time;
         String type, town;
+        ArrayList<String> arrayList = new ArrayList<>();
         while (fileScanner.hasNext()){
             String line = fileScanner.nextLine();
             String splitBy[] = line.split(" ");
@@ -20,6 +20,9 @@ public class FileReader {
                 type = splitBy[1];
                 town = splitBy[2];
                 System.out.println(time+" "+type+" "+town);
+                arrayList.add(0, String.valueOf(time));
+                arrayList.add(1,type);
+                arrayList.add(2,town);
             }else{
                 StringBuilder strBuilder = new StringBuilder();
                 int count = 2;
@@ -31,11 +34,16 @@ public class FileReader {
                     count++;
                 }
                 town = strBuilder.toString();
+                arrayList.add(0, String.valueOf(time));
+                arrayList.add(1,type);
+                arrayList.add(2,town);
                 System.out.println(time+" "+type+" "+town);
 
             }
             //System.out.println(splitBy.length);
         }
+        System.out.println("\n"+Arrays.toString(arrayList.toArray())+"\n\n");
+
 
     }
 }
