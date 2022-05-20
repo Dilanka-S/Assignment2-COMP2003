@@ -1,3 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd" version="6.43.0" timestamp="2022-05-20T02:16:02.076">
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd" version="6.43.0" timestamp="2022-05-20T19:18:12.923">
+<file name="/Users/dilankaseneviratne/Documents/Curtin/Year 2 Semester 1/COMP 2003/Assignment2/Assignment2-COMP2003/Assignment2-COMP2003-20529624/src/main/java/edu/curtin/app/userinterface/MainMenu.java">
+<violation beginline="6" endline="6" begincolumn="17" endcolumn="18" rule="CloseResource" ruleset="Error Prone" package="edu.curtin.app.userinterface" class="MainMenu" method="mainMenu" variable="sc" externalInfoUrl="https://pmd.github.io/pmd-6.43.0/pmd_rules_java_errorprone.html#closeresource" priority="3">
+Ensure that resources like this InputStream object are closed after use
+</violation>
+</file>
 </pmd>

@@ -1,12 +1,19 @@
 package edu.curtin.app;
 
+import edu.curtin.app.userinterface.Banners;
+import edu.curtin.app.userinterface.MainMenu;
+
+
 public class Simulator
 {
     public static void main(String[] args)
     {
-        System.out.println("Hello world");
-        
-        // If you wish to change the name and/or package of the class containing 'main()', you 
-        // will also need to update the 'mainClass = ...' line in build.gradle.
+        try{
+            Banners.welcomeBanner();
+            MainMenu.mainMenu();
+            Banners.exitBanner();
+        }catch (Exception e){
+            System.err.println(e.getMessage());
+        }
     }
 }
