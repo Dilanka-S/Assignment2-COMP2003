@@ -14,7 +14,7 @@ public class FileReader {
         ArrayList<String> arrayList = new ArrayList<>();
         while (fileScanner.hasNext()){
             String line = fileScanner.nextLine();
-            String splitBy[] = line.split(" ");
+            String[] splitBy = line.split(" ");
             if(splitBy.length==3){
                 time = Integer.parseInt(splitBy[0]);
                 type = splitBy[1];
