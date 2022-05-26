@@ -17,4 +17,12 @@ public class Banners {
                 Student ID\t:\t20529624\s
                 Institute\t:\tCurtin University/SLIIT International - Sri Lanka\033[m\s""");
     }
+    public static void filePrompt(){
+        //IntelliJ text block
+        System.out.println("""
+                    Please enter the name of the desired input file
+                    \tOR
+                    EXIT to quit the simulation
+                    """);
+    }
 }

@@ -7,17 +7,11 @@ import java.io.FileNotFoundException;
 import java.util.*;
 public class MainMenu {
     public static void mainMenu(){
-        try {
-            Scanner sc = new Scanner(System.in);
+        try(Scanner sc = new Scanner(System.in)) {
             String filename;
             boolean exit=false;
             while(!exit){
-                //IntelliJ text block
-                System.out.println("""
-                    Please enter the name of the desired input file
-                    \tOR
-                    EXIT to quit the simulation
-                    """);
+                Banners.filePrompt();
                 System.out.print("Your selection : ");
                 filename = sc.next();
                 if(filename.equals("EXIT")){
@@ -25,18 +19,18 @@ public class MainMenu {
                 }else{
                     System.out.println("\nThe input file you entered is : "+filename+"\n");
                     //to check if the file is valid initially so that the while loop can remain active
-                    Scanner tempScanner = new Scanner(new File(filename));
-                    FileReader.readFile(tempScanner);
-                    tempScanner.close();
+                    try(Scanner tempScanner = new Scanner(new File(filename))){
+                        FileReader.readFile(tempScanner);
+                    }catch (FileNotFoundException fileNotFoundException){
+                        System.out.println("Please the check the filename provided since it cannot be found : "
+                                +fileNotFoundException.getMessage());
+                    }
                 }
             }
-            sc.close();
-
-
+        }catch (InputMismatchException inputMismatchException){
+            System.out.println("Incorrect input values entered for the required field : "
+                    +inputMismatchException.getMessage());
         }
-        catch (FileNotFoundException fileNotFoundException){
-            System.out.println("Please the check the filename provided since it cannot be found : "
-                    +fileNotFoundException.getMessage());
-        }
+
     }
 }

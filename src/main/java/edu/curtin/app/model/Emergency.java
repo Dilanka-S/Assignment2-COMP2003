@@ -17,7 +17,7 @@ public class Emergency {
         return emergencyType;
     }
 
-    public void setEmergencyType(String emergencyType) {
+    public final void setEmergencyType(String emergencyType) {
 
         this.emergencyType = emergencyType;
     }
@@ -26,7 +26,7 @@ public class Emergency {
         return location;
     }
 
-    public void setLocation(String location) {
+    public final void setLocation(String location) {
         this.location = location;
     }
 
@@ -34,7 +34,7 @@ public class Emergency {
         return time;
     }
 
-    public void setTime(LocalDateTime time) {
+    public final void setTime(LocalDateTime time) {
         this.time = time;
     }
 }
