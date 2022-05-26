@@ -15,12 +15,28 @@ public class HighIntensityState implements EmergencyState{
     }
 
     @Override
-    public void run(EmergencyController emergencyController) {
+    public void idle(EmergencyController emergencyController) {
 
     }
 
     @Override
-    public void cancel(EmergencyController emergencyController) {
+    public void running(EmergencyController emergencyController) {
 
     }
+
+    @Override
+    public void high_Intensity(EmergencyController emergencyController) {
+
+    }
+
+    @Override
+    public void low_Intensity(EmergencyController emergencyController) {
+
+    }
+
+    @Override
+    public void cleaned_Up(EmergencyController emergencyController) {
+
+    }
+
 }

@@ -1,5 +1,8 @@
 package edu.curtin.app.model;
 
+import edu.curtin.app.datacontroller.emergencies.EmergencySimulator;
+import edu.curtin.app.datacontroller.tester.TestCase;
+
 import java.util.*;
 
 public class EmergencyList {
@@ -45,5 +48,29 @@ public class EmergencyList {
             tempObserver.observerChange(emergencies);
         }
     }
+
+    public void passEmergencies(){
+        int time;
+        String location, type;
+        for (int i = 0; i < emergencies.size() ; i++) {
+            time = emergencies.get(i).getTime();
+            location = emergencies.get(i).getLocation();
+            type = emergencies.get(i).getEmergencyType();
+            //EmergencySimulator.distributor(time,type,location);
+            EmergencySimulator emergencySimulator = EmergencySimulator.distributor(time,type,location);
+            TestCase testCase = new TestCase(emergencies, emergencySimulator);
+            testCase.testing(emergencies);
+        }
+    }
+
+    public void display(){
+        for (int i = 0; i < emergencies.size() ; i++) {
+            System.out.println(emergencies.get(i).getEmergencyType());
+            System.out.println(emergencies.get(i).getLocation());
+            System.out.println(emergencies.get(i).getTime());
+            System.out.println("");
+        }
+    }
+
 
 }

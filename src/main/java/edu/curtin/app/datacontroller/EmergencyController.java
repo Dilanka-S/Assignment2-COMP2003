@@ -7,13 +7,14 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 public class EmergencyController {
-    private EmergencyList list;
+    private final EmergencyList list;
 
     public EmergencyController(EmergencyList list){
         this.list = list;
     }
 
-    public void addEmergency(LocalDateTime time, String type, String location){
+    public void addEmergency(Integer time, String type, String location){
+        System.out.println(time+type+location);
         list.addEmergency(new Emergency(type,location,time));
     }
     public void removeEmergency(int index){

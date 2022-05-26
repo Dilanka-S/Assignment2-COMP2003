@@ -5,9 +5,9 @@ import java.time.LocalDateTime;
 public class Emergency {
     private String emergencyType;
     private String location;
-    private LocalDateTime time;
+    private Integer time;
 
-    public Emergency(String emergencyType, String location, LocalDateTime time){
+    public Emergency(String emergencyType, String location, Integer time){
         this.setEmergencyType(emergencyType);
         this.setLocation(location);
         this.setTime(time);
@@ -30,11 +30,11 @@ public class Emergency {
         this.location = location;
     }
 
-    public LocalDateTime getTime() {
+    public Integer getTime() {
         return time;
     }
 
-    public final void setTime(LocalDateTime time) {
+    public final void setTime(Integer time) {
         this.time = time;
     }
 }

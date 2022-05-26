@@ -1,3 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd" version="6.43.0" timestamp="2022-05-25T21:25:38.385">
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd" version="6.43.0" timestamp="2022-05-26T16:26:43.331">
+<file name="/Users/dilankaseneviratne/Documents/Curtin/Year 2 Semester 1/COMP 2003/Assignment2/Assignment2-COMP2003/Assignment2-COMP2003-20529624/src/main/java/edu/curtin/app/datacontroller/EmergencyController.java">
+<violation beginline="6" endline="6" begincolumn="1" endcolumn="31" rule="UnnecessaryImport" ruleset="Code Style" package="edu.curtin.app.datacontroller" class="EmergencyController" externalInfoUrl="https://pmd.github.io/pmd-6.43.0/pmd_rules_java_codestyle.html#unnecessaryimport" priority="4">
+Unused import 'java.time.LocalDateTime'
+</violation>
+</file>
+<file name="/Users/dilankaseneviratne/Documents/Curtin/Year 2 Semester 1/COMP 2003/Assignment2/Assignment2-COMP2003/Assignment2-COMP2003-20529624/src/main/java/edu/curtin/app/model/Emergency.java">
+<violation beginline="3" endline="3" begincolumn="1" endcolumn="31" rule="UnnecessaryImport" ruleset="Code Style" package="edu.curtin.app.model" class="Emergency" externalInfoUrl="https://pmd.github.io/pmd-6.43.0/pmd_rules_java_codestyle.html#unnecessaryimport" priority="4">
+Unused import 'java.time.LocalDateTime'
+</violation>
+</file>
+<file name="/Users/dilankaseneviratne/Documents/Curtin/Year 2 Semester 1/COMP 2003/Assignment2/Assignment2-COMP2003/Assignment2-COMP2003-20529624/src/main/java/edu/curtin/app/model/FileReader.java">
+<violation beginline="5" endline="5" begincolumn="1" endcolumn="31" rule="UnnecessaryImport" ruleset="Code Style" package="edu.curtin.app.model" class="FileReader" externalInfoUrl="https://pmd.github.io/pmd-6.43.0/pmd_rules_java_codestyle.html#unnecessaryimport" priority="4">
+Unused import 'java.time.LocalDateTime'
+</violation>
+</file>
+<file name="/Users/dilankaseneviratne/Documents/Curtin/Year 2 Semester 1/COMP 2003/Assignment2/Assignment2-COMP2003/Assignment2-COMP2003-20529624/src/main/java/edu/curtin/app/model/Test.java">
+<violation beginline="11" endline="11" begincolumn="29" endcolumn="47" rule="UnusedLocalVariable" ruleset="Best Practices" package="edu.curtin.app.model" class="Test" method="testCase" variable="emergencyController" externalInfoUrl="https://pmd.github.io/pmd-6.43.0/pmd_rules_java_bestpractices.html#unusedlocalvariable" priority="3">
+Avoid unused local variables such as 'emergencyController'.
+</violation>
+</file>
+<file name="/Users/dilankaseneviratne/Documents/Curtin/Year 2 Semester 1/COMP 2003/Assignment2/Assignment2-COMP2003/Assignment2-COMP2003-20529624/src/main/java/edu/curtin/app/model/states/EmergencyState.java">
+<violation beginline="9" endline="9" begincolumn="5" endcolumn="61" rule="MethodNamingConventions" ruleset="Code Style" package="edu.curtin.app.model.states" class="EmergencyState" method="cleaned_Up" externalInfoUrl="https://pmd.github.io/pmd-6.43.0/pmd_rules_java_codestyle.html#methodnamingconventions" priority="1">
+The instance method name 'cleaned_Up' doesn't match '[a-z][a-zA-Z0-9]*'
+</violation>
+</file>
+<file name="/Users/dilankaseneviratne/Documents/Curtin/Year 2 Semester 1/COMP 2003/Assignment2/Assignment2-COMP2003/Assignment2-COMP2003-20529624/src/main/java/edu/curtin/app/model/states/HighIntensityState.java">
+<violation beginline="8" endline="8" begincolumn="30" endcolumn="50" rule="UnusedPrivateField" ruleset="Best Practices" package="edu.curtin.app.model.states" class="HighIntensityState" variable="FIRE_LOW_CLEANUP_TIME" externalInfoUrl="https://pmd.github.io/pmd-6.43.0/pmd_rules_java_bestpractices.html#unusedprivatefield" priority="3">
+Avoid unused private fields such as 'FIRE_LOW_CLEANUP_TIME'.
+</violation>
+<violation beginline="9" endline="9" begincolumn="24" endcolumn="45" rule="UnusedPrivateField" ruleset="Best Practices" package="edu.curtin.app.model.states" class="HighIntensityState" variable="fire_Low_Casualty_Prob" externalInfoUrl="https://pmd.github.io/pmd-6.43.0/pmd_rules_java_bestpractices.html#unusedprivatefield" priority="3">
+Avoid unused private fields such as 'fire_Low_Casualty_Prob'.
+</violation>
+<violation beginline="9" endline="9" begincolumn="48" endcolumn="67" rule="UnusedPrivateField" ruleset="Best Practices" package="edu.curtin.app.model.states" class="HighIntensityState" variable="fire_Low_Damage_Prob" externalInfoUrl="https://pmd.github.io/pmd-6.43.0/pmd_rules_java_bestpractices.html#unusedprivatefield" priority="3">
+Avoid unused private fields such as 'fire_Low_Damage_Prob'.
+</violation>
+<violation beginline="9" endline="9" begincolumn="24" endcolumn="45" rule="FieldNamingConventions" ruleset="Code Style" package="edu.curtin.app.model.states" class="HighIntensityState" variable="fire_Low_Casualty_Prob" externalInfoUrl="https://pmd.github.io/pmd-6.43.0/pmd_rules_java_codestyle.html#fieldnamingconventions" priority="1">
+The static field name 'fire_Low_Casualty_Prob' doesn't match '[a-z][a-zA-Z0-9]*'
+</violation>
+<violation beginline="9" endline="9" begincolumn="48" endcolumn="67" rule="FieldNamingConventions" ruleset="Code Style" package="edu.curtin.app.model.states" class="HighIntensityState" variable="fire_Low_Damage_Prob" externalInfoUrl="https://pmd.github.io/pmd-6.43.0/pmd_rules_java_codestyle.html#fieldnamingconventions" priority="1">
+The static field name 'fire_Low_Damage_Prob' doesn't match '[a-z][a-zA-Z0-9]*'
+</violation>
+<violation beginline="10" endline="10" begincolumn="24" endcolumn="46" rule="UnusedPrivateField" ruleset="Best Practices" package="edu.curtin.app.model.states" class="HighIntensityState" variable="fire_High_Casualty_Prob" externalInfoUrl="https://pmd.github.io/pmd-6.43.0/pmd_rules_java_bestpractices.html#unusedprivatefield" priority="3">
+Avoid unused private fields such as 'fire_High_Casualty_Prob'.
+</violation>
+<violation beginline="10" endline="10" begincolumn="49" endcolumn="69" rule="UnusedPrivateField" ruleset="Best Practices" package="edu.curtin.app.model.states" class="HighIntensityState" variable="fire_High_Damage_Prob" externalInfoUrl="https://pmd.github.io/pmd-6.43.0/pmd_rules_java_bestpractices.html#unusedprivatefield" priority="3">
+Avoid unused private fields such as 'fire_High_Damage_Prob'.
+</violation>
+<violation beginline="10" endline="10" begincolumn="24" endcolumn="46" rule="FieldNamingConventions" ruleset="Code Style" package="edu.curtin.app.model.states" class="HighIntensityState" variable="fire_High_Casualty_Prob" externalInfoUrl="https://pmd.github.io/pmd-6.43.0/pmd_rules_java_codestyle.html#fieldnamingconventions" priority="1">
+The static field name 'fire_High_Casualty_Prob' doesn't match '[a-z][a-zA-Z0-9]*'
+</violation>
+<violation beginline="10" endline="10" begincolumn="49" endcolumn="69" rule="FieldNamingConventions" ruleset="Code Style" package="edu.curtin.app.model.states" class="HighIntensityState" variable="fire_High_Damage_Prob" externalInfoUrl="https://pmd.github.io/pmd-6.43.0/pmd_rules_java_codestyle.html#fieldnamingconventions" priority="1">
+The static field name 'fire_High_Damage_Prob' doesn't match '[a-z][a-zA-Z0-9]*'
+</violation>
+</file>
 </pmd>
