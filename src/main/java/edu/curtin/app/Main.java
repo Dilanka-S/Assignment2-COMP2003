@@ -5,7 +5,7 @@ import edu.curtin.app.userinterface.MainMenu;
 
 
 
-public class Simulator
+public class Main
 {
     public static void main(String[] args)
     {

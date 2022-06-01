@@ -1,5 +1,8 @@
 package edu.curtin.app.datacontroller.emergencies;
 
+import edu.curtin.app.model.Emergency;
+import edu.curtin.app.model.states.EmergencyState;
+
 public abstract class EmergencySimulator {
     public static EmergencySimulator distributor(Integer time, String type, String location){
         EmergencySimulator emergencySimulator = null;
@@ -21,6 +24,8 @@ public abstract class EmergencySimulator {
         return emergencySimulator;
     }
     public abstract void testCase();
+    public abstract void callDistributor(Integer time, String type, String location) throws InterruptedException;
+    public abstract void setState(EmergencyState emergencyState);
     public abstract void start();
     public abstract void idle();
     public abstract void running();

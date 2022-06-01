@@ -1,12 +1,16 @@
 package edu.curtin.app.model.states;
 
 import edu.curtin.app.datacontroller.EmergencyController;
+import edu.curtin.app.datacontroller.emergencies.EmergencySimulator;
 
 public class LowIntensityState implements EmergencyState{
-    @Override
-    public void start(EmergencyController emergencyController) {
+    private EmergencySimulator emergencySimulator;
 
+    public LowIntensityState(EmergencySimulator emergencySimulator) {
+        this.emergencySimulator = emergencySimulator;
     }
+
+
 
     @Override
     public void idle(EmergencyController emergencyController) {
@@ -20,7 +24,7 @@ public class LowIntensityState implements EmergencyState{
 
     @Override
     public void high_Intensity(EmergencyController emergencyController) {
-
+        emergencySimulator.setState(new HighIntensityState(emergencySimulator));
     }
 
     @Override
@@ -30,7 +34,7 @@ public class LowIntensityState implements EmergencyState{
 
     @Override
     public void cleaned_Up(EmergencyController emergencyController) {
-
+        emergencySimulator.setState(new CleanupState(emergencySimulator));
     }
 
 }

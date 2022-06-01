@@ -12,7 +12,7 @@ repositories {
 }
 
 application {
-    mainClass = 'edu.curtin.app.Simulator'
+    mainClass = 'edu.curtin.app.Main'
 }
 
 tasks.run.configure {

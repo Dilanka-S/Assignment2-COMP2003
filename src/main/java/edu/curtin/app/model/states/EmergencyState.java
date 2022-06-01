@@ -3,7 +3,7 @@ package edu.curtin.app.model.states;
 import edu.curtin.app.datacontroller.EmergencyController;
 
 public interface EmergencyState {
-    void start(EmergencyController emergencyController);
+
     void idle(EmergencyController emergencyController);
     void running(EmergencyController emergencyController);
     void high_Intensity(EmergencyController emergencyController);

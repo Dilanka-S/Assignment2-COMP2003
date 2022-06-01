@@ -1,7 +1,7 @@
 package edu.curtin.app.model;
 
 import edu.curtin.app.datacontroller.emergencies.EmergencySimulator;
-import edu.curtin.app.datacontroller.tester.TestCase;
+import edu.curtin.app.datacontroller.tester.Simulator;
 
 import java.util.*;
 
@@ -58,8 +58,8 @@ public class EmergencyList {
             type = emergencies.get(i).getEmergencyType();
             //EmergencySimulator.distributor(time,type,location);
             EmergencySimulator emergencySimulator = EmergencySimulator.distributor(time,type,location);
-            TestCase testCase = new TestCase(emergencies, emergencySimulator);
-            testCase.testing(emergencies);
+            Simulator simulator = new Simulator(emergencies, emergencySimulator);
+            //simulator.simulation(emergencies);
         }
     }
 
