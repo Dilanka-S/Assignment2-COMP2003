@@ -8,7 +8,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class FileReader {
-    public static void readFile(Scanner fileScanner){
+    public static void readFile(Scanner fileScanner) throws InterruptedException {
         //Scanner fileScanner = new Scanner(new File(filename));
         int time;
         String type, town;
@@ -49,7 +49,7 @@ public class FileReader {
             //System.out.println(splitBy.length);
         }
         //System.out.println("\n"+Arrays.toString(arrayList.toArray())+"\n\n");
-        emergencyList.display();
+        //emergencyList.display();
         emergencyList.passEmergencies();
     }
 }

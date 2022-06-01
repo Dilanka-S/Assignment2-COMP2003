@@ -5,28 +5,24 @@ import edu.curtin.app.model.states.EmergencyState;
 public class FloodEmergency extends EmergencySimulator{
     private EmergencyState emergencyState;
     public final int FLOOD_END_TIME = 40;
-    public final double FLOOD_CASUALTY_PROB = 
+    public final double FLOOD_CASUALTY_PROB = 0.5;
+    public final double FLOOD_DAMAGE_PROB = 0.6;
+
     public FloodEmergency() {
         System.out.println("Flood Method is working");
     }
 
-    public void testCase(){
-        System.out.println("Flood Method is working");
-    }
 
     @Override
-    public void callDistributor(Integer time, String type, String location) {
+    public void initialize(Integer time, String type, String location) {
+        while(time>0){
+
+        }
     }
 
     @Override
     public void setState(EmergencyState emergencyState) {
         this.emergencyState = emergencyState;
-    }
-
-
-    @Override
-    public void start() {
-
     }
 
     @Override

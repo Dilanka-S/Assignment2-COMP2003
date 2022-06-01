@@ -20,6 +20,7 @@ public class Banners {
     public static void filePrompt(){
         //IntelliJ text block
         System.out.println("""
+                    \n
                     Please enter the name of the desired input file
                     \tOR
                     EXIT to quit the simulation

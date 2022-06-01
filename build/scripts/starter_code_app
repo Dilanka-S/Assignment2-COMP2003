@@ -201,7 +201,7 @@ fi
 
 set -- \
         -classpath "$CLASSPATH" \
-        edu.curtin.app.Simulator \
+        edu.curtin.app.Main \
         "$@"
 
 # Use "xargs" to parse quoted args.

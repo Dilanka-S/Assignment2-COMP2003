@@ -5,6 +5,8 @@ import edu.curtin.app.responders.ResponderComm;
 import edu.curtin.app.responders.ResponderCommImpl;
 
 import java.lang.Thread;
+import java.text.DecimalFormat;
+import java.util.List;
 
 public class FireEmergency extends EmergencySimulator{
     private EmergencyState emergencyState;
@@ -22,43 +24,46 @@ public class FireEmergency extends EmergencySimulator{
         System.out.println("FIRE Method is working");
     }
 
-    public void testCase(){
-        System.out.println("FIRE Method is working");
-    }
-
     @Override
-    public void callDistributor(Integer time, String type, String location) throws InterruptedException {
+    public void initialize(Integer time, String type, String location) throws InterruptedException {
+        System.out.println("Entered fire initialize : "+time+","+type+","+location);
         ResponderComm responderComm = new ResponderCommImpl();
-        while (time!=0){
-            Thread.sleep(1000);
-            if(type.equals("fire")){
-                double probability = Math.random();
+        List<String> temp = null;
+        while (time>0){
+            //Thread.sleep(1000);
+            //if(type.equals("fire")){
+            DecimalFormat decimalFormat = new DecimalFormat("#.#");
+            double probability = Double.parseDouble(decimalFormat.format(Math.random()));
+            //System.out.println("- WHILE Loop FIRE : "+time+","+probability);
                 if (probability == FIRE_LOW_CASUALTY_PROB){
+                    System.out.println("> FIRE LOW CASUALTY PROB");
+                    temp =  responderComm.poll();
 
+                    time = time - FIRE_LOW_TO_HIGH_TIME;
                 }else if (probability == FIRE_HIGH_CASUALTY_PROB){
-
+                    System.out.println("> FIRE HIGH CASUALTY PROB");
+                    temp = responderComm.poll();
+                    time = time - FIRE_HIGH_TO_LOW_TIME;
                 } else if (probability == FIRE_LOW_DAMAGE_PROB) {
-
+                    System.out.println("> FIRE LOW DAMAGE PROB");
+                    temp = responderComm.poll();
                 } else if (probability == FIRE_HIGH_DAMAGE_PROB) {
-
+                    System.out.println("> FIRE HIGH DAMAGE PROB");
+                    temp = responderComm.poll();
                 }
-            }else{
-                System.out.println("Not correct type");
-            }
+//            }else{
+//                System.out.println("Not correct type");
+//            }
             //responder class poll and send
+            //`System.out.println(temp);
             time--;
         }
+
     }
 
     @Override
     public void setState(EmergencyState emergencyState) {
         this.emergencyState = emergencyState;
-    }
-
-
-    @Override
-    public void start() {
-
     }
 
     @Override

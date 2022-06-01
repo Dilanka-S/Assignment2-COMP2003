@@ -49,25 +49,26 @@ public class EmergencyList {
         }
     }
 
-    public void passEmergencies(){
+    public void passEmergencies() throws InterruptedException {
         int time;
         String location, type;
-        for (int i = 0; i < emergencies.size() ; i++) {
-            time = emergencies.get(i).getTime();
-            location = emergencies.get(i).getLocation();
-            type = emergencies.get(i).getEmergencyType();
-            //EmergencySimulator.distributor(time,type,location);
-            EmergencySimulator emergencySimulator = EmergencySimulator.distributor(time,type,location);
-            Simulator simulator = new Simulator(emergencies, emergencySimulator);
-            //simulator.simulation(emergencies);
-        }
+        display();
+        System.out.println("\n\n");
+        Simulator simulator = new Simulator(emergencies);
+//        for (int i = 0; i < emergencies.size() ; i++) {
+//            time = emergencies.get(i).getTime();
+//            location = emergencies.get(i).getLocation();
+//            type = emergencies.get(i).getEmergencyType();
+//            //EmergencySimulator.distributor(time,type,location);
+//        }
+        simulator.testing(emergencies);
     }
 
     public void display(){
-        for (int i = 0; i < emergencies.size() ; i++) {
-            System.out.println(emergencies.get(i).getEmergencyType());
-            System.out.println(emergencies.get(i).getLocation());
-            System.out.println(emergencies.get(i).getTime());
+        for (Emergency emergency : emergencies) {
+            System.out.println(emergency.getEmergencyType());
+            System.out.println(emergency.getLocation());
+            System.out.println(emergency.getTime());
             System.out.println("");
         }
     }

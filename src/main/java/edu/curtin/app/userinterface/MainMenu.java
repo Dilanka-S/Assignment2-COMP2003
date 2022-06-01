@@ -24,6 +24,8 @@ public class MainMenu {
                     }catch (FileNotFoundException fileNotFoundException){
                         System.out.println("Please the check the filename provided since it cannot be found : "
                                 +fileNotFoundException.getMessage());
+                    } catch (InterruptedException e) {
+                        throw new RuntimeException(e);
                     }
                 }
             }

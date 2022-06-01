@@ -71,7 +71,7 @@ set CLASSPATH=%APP_HOME%\lib\starter_code_app-1.0-SNAPSHOT.jar
 
 
 @rem Execute starter_code_app
-"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %STARTER_CODE_APP_OPTS%  -classpath "%CLASSPATH%" edu.curtin.app.Simulator %*
+"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %STARTER_CODE_APP_OPTS%  -classpath "%CLASSPATH%" edu.curtin.app.Main %*
 
 :end
 @rem End local scope for the variables with windows NT shell

@@ -3,7 +3,6 @@ package edu.curtin.app.datacontroller;
 import edu.curtin.app.model.Emergency;
 import edu.curtin.app.model.EmergencyList;
 
-import java.time.LocalDateTime;
 import java.util.List;
 
 public class EmergencyController {
