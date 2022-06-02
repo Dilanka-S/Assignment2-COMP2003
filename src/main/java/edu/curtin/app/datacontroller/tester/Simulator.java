@@ -12,6 +12,7 @@ import java.util.List;
 import static edu.curtin.app.datacontroller.emergencies.EmergencySimulator.distributor;
 
 public class Simulator {
+    //List PMD comment
     List<Emergency> emergencyList;
     EmergencySimulator emergencySimulator;
     public Simulator(List<Emergency> emergencyList) {

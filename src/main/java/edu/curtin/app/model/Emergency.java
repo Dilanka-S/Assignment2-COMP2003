@@ -1,6 +1,5 @@
 package edu.curtin.app.model;
 
-import java.time.LocalDateTime;
 
 public class Emergency {
     private String emergencyType;

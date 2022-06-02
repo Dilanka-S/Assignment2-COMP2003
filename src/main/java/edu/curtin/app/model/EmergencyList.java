@@ -1,6 +1,6 @@
 package edu.curtin.app.model;
 
-import edu.curtin.app.datacontroller.emergencies.EmergencySimulator;
+
 import edu.curtin.app.datacontroller.tester.Simulator;
 
 import java.util.*;
@@ -50,8 +50,8 @@ public class EmergencyList {
     }
 
     public void passEmergencies() throws InterruptedException {
-        int time;
-        String location, type;
+//        int time;
+ //       String location, type;
         //display();
         System.out.println("\n\n");
         Simulator simulator = new Simulator(emergencies);

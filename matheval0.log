@@ -1,0 +1,23 @@
+Jun 02, 2022 2:28:36 PM edu.curtin.app.userinterface.MainMenu mainMenu
+INFO: User has entered the filename : sample.txt
+Jun 02, 2022 2:28:36 PM edu.curtin.app.userinterface.MainMenu mainMenu
+INFO: Filename entered by the user has been passed to the file reader method 
+Jun 02, 2022 2:28:36 PM edu.curtin.app.model.FileReader readFile
+INFO: Data entered for Emergency(0)
+	Time : 240 Type : flood Location : Midtown
+Jun 02, 2022 2:28:36 PM edu.curtin.app.model.FileReader readFile
+INFO: Data entered for Emergency(1)
+	Time : 60 Type : fire Location : Midtown
+Jun 02, 2022 2:28:36 PM edu.curtin.app.model.FileReader readFile
+INFO: Data entered for Emergency(2)
+	Time : 120 Type : fire Location : Hill Valley 
+Jun 02, 2022 2:28:36 PM edu.curtin.app.model.FileReader readFile
+INFO: Data entered for Emergency(3)
+	Time : 240 Type : flood Location : Hill Valley 
+Jun 02, 2022 2:28:36 PM edu.curtin.app.model.FileReader readFile
+INFO: Data entered for Emergency(4)
+	Time : 240 Type : chemical Location : Westtown
+Jun 02, 2022 2:28:46 PM edu.curtin.app.userinterface.MainMenu mainMenu
+INFO: User has entered the filename : EXIT
+Jun 02, 2022 2:28:46 PM edu.curtin.app.userinterface.MainMenu mainMenu
+INFO: User has decided to EXIT the program
