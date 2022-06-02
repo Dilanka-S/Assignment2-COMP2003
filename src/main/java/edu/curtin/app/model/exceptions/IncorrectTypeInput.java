@@ -1,4 +1,4 @@
-package edu.curtin.app.exceptions;
+package edu.curtin.app.model.exceptions;
 
 public class IncorrectTypeInput extends EmergencyException{
     public IncorrectTypeInput() {

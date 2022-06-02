@@ -1,4 +1,4 @@
-package edu.curtin.app.exceptions;
+package edu.curtin.app.model.exceptions;
 
 public class IncorrectEmergencyType extends EmergencyException{
 

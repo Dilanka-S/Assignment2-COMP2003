@@ -2,11 +2,8 @@ package edu.curtin.app.model;
 
 //import java.io.*;
 
-import edu.curtin.app.exceptions.IncorrectTypeInput;
-import edu.curtin.app.userinterface.MainMenu;
+import edu.curtin.app.model.exceptions.IncorrectTypeInput;
 
-
-import java.util.ArrayList;
 
 import java.util.Scanner;
 import java.util.logging.Logger;

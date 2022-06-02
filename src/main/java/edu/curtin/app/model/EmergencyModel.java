@@ -4,4 +4,5 @@ import java.util.List;
 
 public interface EmergencyModel {
     void observerChange(List<Emergency> emergencies);
+
 }

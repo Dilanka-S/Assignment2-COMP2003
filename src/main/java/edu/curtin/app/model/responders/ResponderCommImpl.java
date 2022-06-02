@@ -1,4 +1,4 @@
-package edu.curtin.app.responders;
+package edu.curtin.app.model.responders;
 
 import java.util.*;
 import java.util.regex.*;

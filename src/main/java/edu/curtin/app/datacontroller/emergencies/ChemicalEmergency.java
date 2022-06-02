@@ -1,9 +1,9 @@
 package edu.curtin.app.datacontroller.emergencies;
 
-import edu.curtin.app.exceptions.IncorrectEmergencyType;
+import edu.curtin.app.model.exceptions.IncorrectEmergencyType;
 import edu.curtin.app.model.states.EmergencyState;
-import edu.curtin.app.responders.ResponderComm;
-import edu.curtin.app.responders.ResponderCommImpl;
+import edu.curtin.app.model.responders.ResponderComm;
+import edu.curtin.app.model.responders.ResponderCommImpl;
 
 import java.text.DecimalFormat;
 import java.util.List;
@@ -31,19 +31,31 @@ public class ChemicalEmergency extends EmergencySimulator {
             if(!type.equals("chemical")){
                 throw new IncorrectEmergencyType("Incorrect Emergency Type has been passed to the Chemical Emergency State");
             }else{
+                boolean end = false;
                 int casualtyCount=0, contaminationCount=0;
                 ResponderComm responderComm = new ResponderCommImpl();
-                List<String> temp;
+                List<String> pollResult;
                 responderComm.send("chemical start "+location);
-                while (time!=0){
-                    DecimalFormat decimalFormat = new DecimalFormat("#.#");
-                    double probability = Double.parseDouble(decimalFormat.format(Math.random()));
-                    if (probability == CHEM_CASUALTY_PROB){
-                        casualtyCount++;
-                        //System.out.println("CHEMICAL CASUALTY PROB");
-                    } else if (probability == CHEM_CONTAM_PROB) {
-                        contaminationCount++;
-                        //System.out.println("CHEMICAL CONTAMINATION PROB");
+                while (time>0){
+                    while (!end){
+                        DecimalFormat decimalFormat = new DecimalFormat("#.#");
+                        double probability = Double.parseDouble(decimalFormat.format(Math.random()));
+                        if (probability == CHEM_CASUALTY_PROB){
+                            casualtyCount++;
+                            //responderComm.send("chemical casualty 1 "+location);
+                            //System.out.println("CHEMICAL CASUALTY PROB");
+                        } else if (probability == CHEM_CONTAM_PROB) {
+                            contaminationCount++;
+                            //responderComm.send("chemical damage 1 "+location);
+                            //System.out.println("CHEMICAL CONTAMINATION PROB");
+                        }
+                        pollResult = responderComm.poll();
+                        String tempString = pollResult.toString();
+                        //System.out.println("tempString : "+tempString);
+                        end = checkEnd(tempString);
+                        System.out.println(pollResult);
+                        Thread.sleep(1000);
+
                     }
                     time--;
                 }
@@ -52,9 +64,8 @@ public class ChemicalEmergency extends EmergencySimulator {
                 responderComm.send("chemical damage "+contaminationCount+" "+location);
                 System.out.println();
                 responderComm.send("chemical end "+location);
-                temp = responderComm.poll();
-                System.out.println(temp);
-                Thread.sleep(1000);
+                pollResult = responderComm.poll();
+                System.out.println(pollResult);
             }
 
         }catch (InterruptedException interruptedException){
@@ -62,9 +73,6 @@ public class ChemicalEmergency extends EmergencySimulator {
         }catch (IncorrectEmergencyType incorrectEmergencyType){
             System.err.println("An Incorrect Emergency Type Exception has occurred :"+incorrectEmergencyType.getMessage());
         }
-//        }else{
-//            System.out.println("Incorrect type");
-//        }
     }
 
     @Override
@@ -95,5 +103,8 @@ public class ChemicalEmergency extends EmergencySimulator {
     @Override
     public void cleaned_Up() {
 
+    }
+    public Boolean checkEnd(String pollResult){
+        return pollResult.contains("end");
     }
 }
