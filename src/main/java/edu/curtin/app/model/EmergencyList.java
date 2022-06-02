@@ -52,7 +52,7 @@ public class EmergencyList {
     public void passEmergencies() throws InterruptedException {
         int time;
         String location, type;
-        display();
+        //display();
         System.out.println("\n\n");
         Simulator simulator = new Simulator(emergencies);
 //        for (int i = 0; i < emergencies.size() ; i++) {

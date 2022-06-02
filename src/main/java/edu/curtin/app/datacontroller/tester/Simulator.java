@@ -9,6 +9,8 @@ import edu.curtin.app.model.EmergencyList;
 
 import java.util.List;
 
+import static edu.curtin.app.datacontroller.emergencies.EmergencySimulator.distributor;
+
 public class Simulator {
     List<Emergency> emergencyList;
     EmergencySimulator emergencySimulator;
@@ -37,25 +39,6 @@ public class Simulator {
         }
 
     }
-    public static void distributor(Integer time, String type, String location) throws InterruptedException {
-        EmergencySimulator emergencySimulator;
-        //System.out.println("The type is :"+type);
-        switch (type){
-            case "fire" :
-                emergencySimulator = new FireEmergency();
-                emergencySimulator.initialize(time,type,location);
-                //System.out.println("Switch Fire");
-                break;
-            case "flood" :
-                emergencySimulator = new FloodEmergency();
-                break;
-            case "chemical" :
-                emergencySimulator = new ChemicalEmergency();
-                break;
-            default:
-                break;
-        }
-        //return emergencySimulator;
-    }
+
 
 }
