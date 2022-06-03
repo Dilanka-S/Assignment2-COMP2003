@@ -10,15 +10,19 @@ public abstract class EmergencySimulator {
         switch (type){
             case "fire" :
                 emergencySimulator = new FireEmergency(time,type,location);
+                emergencySimulator.printBorder();
+
                 //emergencySimulator.initialize(time,type,location);
                 //System.out.println("Switch Fire");
                 break;
             case "flood" :
                 emergencySimulator = new FloodEmergency(time, type, location);
+                emergencySimulator.printBorder();
                 //emergencySimulator.initialize(time, type, location);
                 break;
             case "chemical" :
                 emergencySimulator = new ChemicalEmergency(time, type, location);
+                emergencySimulator.printBorder();
                 //emergencySimulator.initialize(time, type, location);
                 break;
             default:
@@ -34,6 +38,7 @@ public abstract class EmergencySimulator {
     public abstract void high_Intensity();
     public abstract void low_Intensity();
     public abstract void cleaned_Up();
+    public abstract void printBorder();
 
 
 }

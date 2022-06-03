@@ -53,17 +53,21 @@ public class ChemicalEmergency extends EmergencySimulator {
                         String tempString = pollResult.toString();
                         //System.out.println("tempString : "+tempString);
                         end = checkEnd(tempString);
-                        System.out.println(pollResult);
+                        if(!pollResult.isEmpty()){
+                            if(pollResult.contains("chemical + "+location) || pollResult.contains("chemical - "+location)){
+                                System.out.println(pollResult);
+                            }
+                        }
+                        //System.out.println(pollResult);
                         Thread.sleep(1000);
-
                     }
                     time--;
                 }
+                responderComm.send("chemical end "+location);
                 responderComm.send("chemical casualty "+casualtyCount+" "+location);
                 System.out.println();
                 responderComm.send("chemical damage "+contaminationCount+" "+location);
                 System.out.println();
-                responderComm.send("chemical end "+location);
                 pollResult = responderComm.poll();
                 System.out.println(pollResult);
             }
@@ -104,6 +108,12 @@ public class ChemicalEmergency extends EmergencySimulator {
     public void cleaned_Up() {
 
     }
+
+    @Override
+    public void printBorder() {
+        System.out.println("__________________________________________________");
+    }
+
     public Boolean checkEnd(String pollResult){
         return pollResult.contains("end");
     }

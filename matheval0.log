@@ -1,23 +1,95 @@
-Jun 03, 2022 12:41:39 AM edu.curtin.app.userinterface.MainMenu mainMenu
+Jun 03, 2022 6:41:45 AM edu.curtin.app.userinterface.MainMenu mainMenu
 INFO: User has entered the filename : sample.txt
-Jun 03, 2022 12:41:39 AM edu.curtin.app.userinterface.MainMenu mainMenu
+Jun 03, 2022 6:41:45 AM edu.curtin.app.userinterface.MainMenu mainMenu
 INFO: Filename entered by the user has been passed to the file reader method 
-Jun 03, 2022 12:41:39 AM edu.curtin.app.model.FileReader readFile
+Jun 03, 2022 6:41:45 AM edu.curtin.app.model.FileReader readFile
 INFO: Data entered for Emergency(0)
 	Time : 240 Type : flood Location : Midtown
-Jun 03, 2022 12:41:39 AM edu.curtin.app.model.FileReader readFile
+Jun 03, 2022 6:41:45 AM edu.curtin.app.model.FileReader readFile
 INFO: Data entered for Emergency(1)
 	Time : 60 Type : fire Location : Midtown
-Jun 03, 2022 12:41:39 AM edu.curtin.app.model.FileReader readFile
+Jun 03, 2022 6:41:45 AM edu.curtin.app.model.FileReader readFile
 INFO: Data entered for Emergency(2)
 	Time : 120 Type : fire Location : Hill Valley 
-Jun 03, 2022 12:41:39 AM edu.curtin.app.model.FileReader readFile
+Jun 03, 2022 6:41:45 AM edu.curtin.app.model.FileReader readFile
 INFO: Data entered for Emergency(3)
 	Time : 240 Type : flood Location : Hill Valley 
-Jun 03, 2022 12:41:39 AM edu.curtin.app.model.FileReader readFile
+Jun 03, 2022 6:41:45 AM edu.curtin.app.model.FileReader readFile
 INFO: Data entered for Emergency(4)
 	Time : 240 Type : chemical Location : Westtown
-Jun 03, 2022 12:51:05 AM edu.curtin.app.userinterface.MainMenu mainMenu
-INFO: User has entered the filename : EXIT
-Jun 03, 2022 12:51:05 AM edu.curtin.app.userinterface.MainMenu mainMenu
-INFO: User has decided to EXIT the program
+Jun 03, 2022 6:42:17 AM edu.curtin.app.datacontroller.emergencies.FireEmergency initialize
+INFO: Fire Emergency set to : Low Intensity State
+Jun 03, 2022 6:42:17 AM edu.curtin.app.datacontroller.emergencies.FireEmergency initialize
+INFO: Fire has started
+Jun 03, 2022 6:42:27 AM edu.curtin.app.datacontroller.emergencies.FireEmergency initialize
+INFO: Fire Emergency set to : High Intensity State
+Jun 03, 2022 6:42:27 AM edu.curtin.app.datacontroller.emergencies.FireEmergency initialize
+INFO: Fire High Intensity : Responders Arrived
+Jun 03, 2022 6:42:29 AM edu.curtin.app.datacontroller.emergencies.FireEmergency initialize
+INFO: Fire High Intensity : Responders Left
+Jun 03, 2022 6:42:31 AM edu.curtin.app.datacontroller.emergencies.FireEmergency initialize
+INFO: Fire High Intensity : Casualty
+Jun 03, 2022 6:42:34 AM edu.curtin.app.datacontroller.emergencies.FireEmergency initialize
+INFO: Fire High Intensity : Damage
+Jun 03, 2022 6:42:43 AM edu.curtin.app.datacontroller.emergencies.FireEmergency initialize
+INFO: Fire High Intensity : Casualty
+Jun 03, 2022 6:42:43 AM edu.curtin.app.datacontroller.emergencies.FireEmergency initialize
+INFO: Fire High Intensity : Responders Arrived
+Jun 03, 2022 6:42:47 AM edu.curtin.app.datacontroller.emergencies.FireEmergency initialize
+INFO: Fire Emergency set to : Low Intensity State
+Jun 03, 2022 6:42:49 AM edu.curtin.app.datacontroller.emergencies.FireEmergency initialize
+INFO: Fire Low Intensity : Damage
+Jun 03, 2022 6:42:50 AM edu.curtin.app.datacontroller.emergencies.FireEmergency initialize
+INFO: Fire Low Intensity : Casualty
+Jun 03, 2022 6:42:52 AM edu.curtin.app.datacontroller.emergencies.FireEmergency initialize
+INFO: Fire Low Intensity : Damage
+Jun 03, 2022 6:42:53 AM edu.curtin.app.datacontroller.emergencies.FireEmergency initialize
+INFO: Fire Low Intensity : Damage
+Jun 03, 2022 6:42:57 AM edu.curtin.app.datacontroller.emergencies.FireEmergency initialize
+INFO: Fire Emergency set to : High Intensity State
+Jun 03, 2022 6:42:57 AM edu.curtin.app.datacontroller.emergencies.FireEmergency initialize
+INFO: Fire High Intensity : Casualty
+Jun 03, 2022 6:43:16 AM edu.curtin.app.datacontroller.emergencies.FireEmergency initialize
+INFO: Fire High Intensity : Damage
+Jun 03, 2022 6:43:17 AM edu.curtin.app.datacontroller.emergencies.FireEmergency initialize
+INFO: Fire Emergency set to : Low Intensity State
+Jun 03, 2022 6:43:17 AM edu.curtin.app.datacontroller.emergencies.FireEmergency initialize
+INFO: Fire Emergency set to : Idle State
+Jun 03, 2022 6:43:17 AM edu.curtin.app.datacontroller.emergencies.FireEmergency <init>
+INFO: New Fire Emergency created with : 60	fire	Midtown
+Jun 03, 2022 6:43:17 AM edu.curtin.app.datacontroller.emergencies.FireEmergency initialize
+INFO: Fire Emergency set to : Low Intensity State
+Jun 03, 2022 6:43:17 AM edu.curtin.app.datacontroller.emergencies.FireEmergency initialize
+INFO: Fire has started
+Jun 03, 2022 6:43:18 AM edu.curtin.app.datacontroller.emergencies.FireEmergency initialize
+INFO: Fire Low Intensity : Casualty
+Jun 03, 2022 6:43:19 AM edu.curtin.app.datacontroller.emergencies.FireEmergency initialize
+INFO: Fire Low Intensity : Casualty
+Jun 03, 2022 6:43:27 AM edu.curtin.app.datacontroller.emergencies.FireEmergency initialize
+INFO: Fire Emergency set to : High Intensity State
+Jun 03, 2022 6:43:30 AM edu.curtin.app.datacontroller.emergencies.FireEmergency initialize
+INFO: Fire High Intensity : Damage
+Jun 03, 2022 6:43:35 AM edu.curtin.app.datacontroller.emergencies.FireEmergency initialize
+INFO: Fire High Intensity : Casualty
+Jun 03, 2022 6:43:38 AM edu.curtin.app.datacontroller.emergencies.FireEmergency initialize
+INFO: Fire High Intensity : Casualty
+Jun 03, 2022 6:43:44 AM edu.curtin.app.datacontroller.emergencies.FireEmergency initialize
+INFO: Fire High Intensity : Casualty
+Jun 03, 2022 6:43:47 AM edu.curtin.app.datacontroller.emergencies.FireEmergency initialize
+INFO: Fire Emergency set to : Low Intensity State
+Jun 03, 2022 6:43:53 AM edu.curtin.app.datacontroller.emergencies.FireEmergency initialize
+INFO: Fire Low Intensity : Damage
+Jun 03, 2022 6:43:57 AM edu.curtin.app.datacontroller.emergencies.FireEmergency initialize
+INFO: Fire Emergency set to : High Intensity State
+Jun 03, 2022 6:44:07 AM edu.curtin.app.datacontroller.emergencies.FireEmergency initialize
+INFO: Fire High Intensity : Damage
+Jun 03, 2022 6:44:10 AM edu.curtin.app.datacontroller.emergencies.FireEmergency initialize
+INFO: Fire High Intensity : Damage
+Jun 03, 2022 6:44:15 AM edu.curtin.app.datacontroller.emergencies.FireEmergency initialize
+INFO: Fire High Intensity : Damage
+Jun 03, 2022 6:44:17 AM edu.curtin.app.datacontroller.emergencies.FireEmergency initialize
+INFO: Fire Emergency set to : Low Intensity State
+Jun 03, 2022 6:44:17 AM edu.curtin.app.datacontroller.emergencies.FireEmergency initialize
+INFO: Fire Emergency set to : Idle State
+Jun 03, 2022 6:44:17 AM edu.curtin.app.datacontroller.emergencies.FireEmergency <init>
+INFO: New Fire Emergency created with : 120	fire	Hill Valley 
