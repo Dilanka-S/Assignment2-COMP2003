@@ -5,10 +5,11 @@ package edu.curtin.app.model;
 import edu.curtin.app.model.exceptions.IncorrectTypeInput;
 
 
+import java.util.List;
 import java.util.Scanner;
 import java.util.logging.Logger;
 
-public class FileReader {
+public class FileReader implements EmergencyModel {
     private static Logger fileReaderLogger = Logger.getLogger(FileReader.class.getName());
     public static void readFile(Scanner fileScanner) {
         try{
@@ -74,5 +75,10 @@ public class FileReader {
         }catch (InterruptedException interruptedException){
             System.out.println("An interrupted exception has occurred : "+interruptedException.getMessage());
         }
+    }
+
+    @Override
+    public void observerChange(List<Emergency> emergencies) {
+
     }
 }

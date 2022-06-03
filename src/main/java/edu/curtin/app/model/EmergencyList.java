@@ -5,7 +5,7 @@ import edu.curtin.app.datacontroller.tester.Simulator;
 
 import java.util.*;
 
-public class EmergencyList {
+public class EmergencyList implements EmergencyModel{
     private List<Emergency> emergencies;
     private Set<EmergencyModel> observers;
 
@@ -37,10 +37,13 @@ public class EmergencyList {
 
     public void addEmergencyModel(EmergencyModel tempObserver){
         observers.add(tempObserver);
+        notifyObservers();
+
     }
 
     public void removeEmergencyModel(EmergencyModel tempObserver){
         observers.remove(tempObserver);
+        notifyObservers();
     }
 
     public void notifyObservers(){
@@ -74,4 +77,8 @@ public class EmergencyList {
     }
 
 
+    @Override
+    public void observerChange(List<Emergency> emergencies) {
+
+    }
 }

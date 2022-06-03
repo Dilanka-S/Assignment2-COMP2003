@@ -4,23 +4,29 @@ import edu.curtin.app.model.exceptions.IncorrectEmergencyType;
 import edu.curtin.app.model.states.EmergencyState;
 import edu.curtin.app.model.responders.ResponderComm;
 import edu.curtin.app.model.responders.ResponderCommImpl;
+import edu.curtin.app.userinterface.MainMenu;
 
 import java.text.DecimalFormat;
 import java.util.List;
+import java.util.logging.Logger;
 
 public class ChemicalEmergency extends EmergencySimulator {
     private EmergencyState emergencyState;
-    public final int CHEM_CLEANUP_TIME = 30;
-    public final double CHEM_CASUALTY_PROB = 0.3;
-    public final double CHEM_CONTAM_PROB = 0.1;
-    public int time;
-    public String type,location;
+//    private final int CHEM_CLEANUP_TIME = 30;
+    private final double CHEM_CASUALTY_PROB = 0.3;
+    private final double CHEM_CONTAM_PROB = 0.1;
+    private int time;
+    private String type,location;
+
+    private static Logger chemicalLogger = Logger.getLogger(MainMenu.class.getName());
+
 
     public ChemicalEmergency(int time, String type, String location){
         //System.out.println("Chemical Method is working");
         this.time = time;
         this.type = type;
         this.location = location;
+        chemicalLogger.info("New Chemical Emergency created with : "+time+"\t"+type+"\t"+location);
         initialize();
     }
 
@@ -36,16 +42,19 @@ public class ChemicalEmergency extends EmergencySimulator {
                 ResponderComm responderComm = new ResponderCommImpl();
                 List<String> pollResult;
                 responderComm.send("chemical start "+location);
+                chemicalLogger.info("Chemical Emergency has occurred");
                 while (time>0){
                     while (!end){
                         DecimalFormat decimalFormat = new DecimalFormat("#.#");
                         double probability = Double.parseDouble(decimalFormat.format(Math.random()));
                         if (probability == CHEM_CASUALTY_PROB){
                             casualtyCount++;
+                            chemicalLogger.info("Chemical Emergency : Casualty ");
                             //responderComm.send("chemical casualty 1 "+location);
                             //System.out.println("CHEMICAL CASUALTY PROB");
                         } else if (probability == CHEM_CONTAM_PROB) {
                             contaminationCount++;
+                            chemicalLogger.info("Chemical Emergency : Contamination ");
                             //responderComm.send("chemical damage 1 "+location);
                             //System.out.println("CHEMICAL CONTAMINATION PROB");
                         }
