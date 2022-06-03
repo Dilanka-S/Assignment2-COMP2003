@@ -1,161 +1,61 @@
-Jun 03, 2022 1:39:44 PM edu.curtin.app.userinterface.MainMenu mainMenu
+Jun 03, 2022 7:02:07 PM edu.curtin.app.userinterface.MainMenu mainMenu
 INFO: User has entered the filename : sample.txt
-Jun 03, 2022 1:39:44 PM edu.curtin.app.userinterface.MainMenu mainMenu
+Jun 03, 2022 7:02:07 PM edu.curtin.app.userinterface.MainMenu mainMenu
 INFO: Filename entered by the user has been passed to the file reader method 
-Jun 03, 2022 1:39:44 PM edu.curtin.app.model.FileReader readFile
+Jun 03, 2022 7:02:07 PM edu.curtin.app.model.FileReader readFile
 INFO: Data entered for Emergency(0)
 	Time : 240 Type : flood Location : Midtown
-Jun 03, 2022 1:39:44 PM edu.curtin.app.model.FileReader readFile
+Jun 03, 2022 7:02:07 PM edu.curtin.app.model.FileReader readFile
 INFO: Data entered for Emergency(1)
 	Time : 60 Type : fire Location : Midtown
-Jun 03, 2022 1:39:44 PM edu.curtin.app.model.FileReader readFile
+Jun 03, 2022 7:02:07 PM edu.curtin.app.model.FileReader readFile
 INFO: Data entered for Emergency(2)
 	Time : 120 Type : fire Location : Hill Valley 
-Jun 03, 2022 1:39:44 PM edu.curtin.app.model.FileReader readFile
+Jun 03, 2022 7:02:07 PM edu.curtin.app.model.FileReader readFile
 INFO: Data entered for Emergency(3)
 	Time : 240 Type : flood Location : Hill Valley 
-Jun 03, 2022 1:39:44 PM edu.curtin.app.model.FileReader readFile
+Jun 03, 2022 7:02:07 PM edu.curtin.app.model.FileReader readFile
 INFO: Data entered for Emergency(4)
 	Time : 240 Type : chemical Location : Westtown
-Jun 03, 2022 1:39:44 PM edu.curtin.app.datacontroller.emergencies.FloodEmergency <init>
+Jun 03, 2022 7:02:07 PM edu.curtin.app.datacontroller.emergencies.FloodEmergency <init>
 INFO: New Flood Emergency created with : 240	flood	Midtown
-Jun 03, 2022 1:39:44 PM edu.curtin.app.datacontroller.emergencies.FloodEmergency initialize
+Jun 03, 2022 7:02:07 PM edu.curtin.app.datacontroller.emergencies.FloodEmergency initialize
 INFO: Flood Emergency set to : Running State
-Jun 03, 2022 1:39:44 PM edu.curtin.app.datacontroller.emergencies.FloodEmergency initialize
+Jun 03, 2022 7:02:07 PM edu.curtin.app.datacontroller.emergencies.FloodEmergency initialize
 INFO: Flood has started
-Jun 03, 2022 1:39:50 PM edu.curtin.app.datacontroller.emergencies.FloodEmergency initialize
-INFO: Flood : Damage
-Jun 03, 2022 1:39:54 PM edu.curtin.app.datacontroller.emergencies.FloodEmergency initialize
-INFO: Flood : Damage
-Jun 03, 2022 1:39:55 PM edu.curtin.app.datacontroller.emergencies.FloodEmergency initialize
+Jun 03, 2022 7:02:27 PM edu.curtin.app.datacontroller.emergencies.FloodEmergency initialize
 INFO: Flood : Casualty
-Jun 03, 2022 1:39:56 PM edu.curtin.app.datacontroller.emergencies.FloodEmergency initialize
+Jun 03, 2022 7:02:28 PM edu.curtin.app.datacontroller.emergencies.FloodEmergency initialize
+INFO: Flood : Casualty
+Jun 03, 2022 7:02:30 PM edu.curtin.app.datacontroller.emergencies.FloodEmergency initialize
 INFO: Flood : Damage
-Jun 03, 2022 1:39:57 PM edu.curtin.app.datacontroller.emergencies.FloodEmergency initialize
+Jun 03, 2022 7:02:33 PM edu.curtin.app.datacontroller.emergencies.FloodEmergency initialize
+INFO: Flood : Casualty
+Jun 03, 2022 7:02:34 PM edu.curtin.app.datacontroller.emergencies.FloodEmergency initialize
+INFO: Flood : Casualty
+Jun 03, 2022 7:02:36 PM edu.curtin.app.datacontroller.emergencies.FloodEmergency initialize
 INFO: Flood : Damage
-Jun 03, 2022 1:40:04 PM edu.curtin.app.datacontroller.emergencies.FloodEmergency initialize
-INFO: Flood : Damage
-Jun 03, 2022 1:40:15 PM edu.curtin.app.datacontroller.emergencies.FloodEmergency initialize
+Jun 03, 2022 7:02:38 PM edu.curtin.app.datacontroller.emergencies.FloodEmergency initialize
 INFO: Flood Emergency has ended
-Jun 03, 2022 1:40:16 PM edu.curtin.app.datacontroller.emergencies.FireEmergency <init>
+Jun 03, 2022 7:02:39 PM edu.curtin.app.datacontroller.emergencies.FireEmergency <init>
 INFO: New Fire Emergency created with : 60	fire	Midtown
-Jun 03, 2022 1:40:16 PM edu.curtin.app.datacontroller.emergencies.FireEmergency initialize
+Jun 03, 2022 7:02:39 PM edu.curtin.app.datacontroller.emergencies.FireEmergency initialize
 INFO: Fire Emergency set to : Low Intensity State
-Jun 03, 2022 1:40:16 PM edu.curtin.app.datacontroller.emergencies.FireEmergency initialize
+Jun 03, 2022 7:02:39 PM edu.curtin.app.datacontroller.emergencies.FireEmergency initialize
 INFO: Fire has started
-Jun 03, 2022 1:40:23 PM edu.curtin.app.datacontroller.emergencies.FireEmergency initialize
+Jun 03, 2022 7:02:42 PM edu.curtin.app.datacontroller.emergencies.FireEmergency initialize
+INFO: Fire Low Intensity : Casualty
+Jun 03, 2022 7:02:44 PM edu.curtin.app.datacontroller.emergencies.FireEmergency initialize
 INFO: Fire Low Intensity : Damage
-Jun 03, 2022 1:40:26 PM edu.curtin.app.datacontroller.emergencies.FireEmergency initialize
+Jun 03, 2022 7:02:45 PM edu.curtin.app.datacontroller.emergencies.FireEmergency initialize
+INFO: Fire Low Intensity : Casualty
+Jun 03, 2022 7:02:49 PM edu.curtin.app.datacontroller.emergencies.FireEmergency initialize
 INFO: Fire Emergency set to : High Intensity State
-Jun 03, 2022 1:40:26 PM edu.curtin.app.datacontroller.emergencies.FireEmergency initialize
+Jun 03, 2022 7:02:49 PM edu.curtin.app.datacontroller.emergencies.FireEmergency initialize
+INFO: Fire High Intensity : Damage
+Jun 03, 2022 7:02:49 PM edu.curtin.app.datacontroller.emergencies.FireEmergency initialize
 INFO: Fire High Intensity : Responders Arrived
-Jun 03, 2022 1:40:28 PM edu.curtin.app.datacontroller.emergencies.FireEmergency initialize
+Jun 03, 2022 7:02:50 PM edu.curtin.app.datacontroller.emergencies.FireEmergency initialize
+INFO: Fire High Intensity : Casualty
+Jun 03, 2022 7:02:51 PM edu.curtin.app.datacontroller.emergencies.FireEmergency initialize
 INFO: Fire High Intensity : Responders Left
-Jun 03, 2022 1:40:31 PM edu.curtin.app.datacontroller.emergencies.FireEmergency initialize
-INFO: Fire High Intensity : Casualty
-Jun 03, 2022 1:40:42 PM edu.curtin.app.datacontroller.emergencies.FireEmergency initialize
-INFO: Fire High Intensity : Responders Arrived
-Jun 03, 2022 1:40:44 PM edu.curtin.app.datacontroller.emergencies.FireEmergency initialize
-INFO: Fire High Intensity : Casualty
-Jun 03, 2022 1:40:46 PM edu.curtin.app.datacontroller.emergencies.FireEmergency initialize
-INFO: Fire Emergency set to : Low Intensity State
-Jun 03, 2022 1:40:50 PM edu.curtin.app.datacontroller.emergencies.FireEmergency initialize
-INFO: Fire Low Intensity : Damage
-Jun 03, 2022 1:40:53 PM edu.curtin.app.datacontroller.emergencies.FireEmergency initialize
-INFO: Fire Low Intensity : Casualty
-Jun 03, 2022 1:40:56 PM edu.curtin.app.datacontroller.emergencies.FireEmergency initialize
-INFO: Fire Emergency set to : High Intensity State
-Jun 03, 2022 1:41:08 PM edu.curtin.app.datacontroller.emergencies.FireEmergency initialize
-INFO: Fire High Intensity : Casualty
-Jun 03, 2022 1:41:10 PM edu.curtin.app.datacontroller.emergencies.FireEmergency initialize
-INFO: Fire High Intensity : Damage
-Jun 03, 2022 1:41:11 PM edu.curtin.app.datacontroller.emergencies.FireEmergency initialize
-INFO: Fire High Intensity : Casualty
-Jun 03, 2022 1:41:15 PM edu.curtin.app.datacontroller.emergencies.FireEmergency initialize
-INFO: Fire High Intensity : Casualty
-Jun 03, 2022 1:41:17 PM edu.curtin.app.datacontroller.emergencies.FireEmergency initialize
-INFO: Fire Emergency set to : Low Intensity State
-Jun 03, 2022 1:41:17 PM edu.curtin.app.datacontroller.emergencies.FireEmergency initialize
-INFO: Fire Emergency has ended
-Jun 03, 2022 1:41:17 PM edu.curtin.app.datacontroller.emergencies.FireEmergency initialize
-INFO: Fire Emergency set to : Idle State
-Jun 03, 2022 1:41:17 PM edu.curtin.app.datacontroller.emergencies.FireEmergency initialize
-INFO: Fire Emergency Total Casualties : 6
-Jun 03, 2022 1:41:17 PM edu.curtin.app.datacontroller.emergencies.FireEmergency initialize
-INFO: Fire Emergency Total Damages : 3
-Jun 03, 2022 1:41:17 PM edu.curtin.app.datacontroller.emergencies.FireEmergency <init>
-INFO: New Fire Emergency created with : 120	fire	Hill Valley 
-Jun 03, 2022 1:41:17 PM edu.curtin.app.datacontroller.emergencies.FireEmergency initialize
-INFO: Fire Emergency set to : Low Intensity State
-Jun 03, 2022 1:41:17 PM edu.curtin.app.datacontroller.emergencies.FireEmergency initialize
-INFO: Fire has started
-Jun 03, 2022 1:41:20 PM edu.curtin.app.datacontroller.emergencies.FireEmergency initialize
-INFO: Fire Low Intensity : Damage
-Jun 03, 2022 1:41:22 PM edu.curtin.app.datacontroller.emergencies.FireEmergency initialize
-INFO: Fire Low Intensity : Damage
-Jun 03, 2022 1:41:27 PM edu.curtin.app.datacontroller.emergencies.FireEmergency initialize
-INFO: Fire Emergency set to : High Intensity State
-Jun 03, 2022 1:41:33 PM edu.curtin.app.datacontroller.emergencies.FireEmergency initialize
-INFO: Fire High Intensity : Casualty
-Jun 03, 2022 1:41:35 PM edu.curtin.app.datacontroller.emergencies.FireEmergency initialize
-INFO: Fire High Intensity : Damage
-Jun 03, 2022 1:41:36 PM edu.curtin.app.datacontroller.emergencies.FireEmergency initialize
-INFO: Fire High Intensity : Casualty
-Jun 03, 2022 1:41:39 PM edu.curtin.app.datacontroller.emergencies.FireEmergency initialize
-INFO: Fire High Intensity : Casualty
-Jun 03, 2022 1:41:47 PM edu.curtin.app.datacontroller.emergencies.FireEmergency initialize
-INFO: Fire Emergency set to : Low Intensity State
-Jun 03, 2022 1:41:51 PM edu.curtin.app.datacontroller.emergencies.FireEmergency initialize
-INFO: Fire Low Intensity : Casualty
-Jun 03, 2022 1:41:56 PM edu.curtin.app.datacontroller.emergencies.FireEmergency initialize
-INFO: Fire Low Intensity : Damage
-Jun 03, 2022 1:41:57 PM edu.curtin.app.datacontroller.emergencies.FireEmergency initialize
-INFO: Fire Emergency set to : High Intensity State
-Jun 03, 2022 1:42:01 PM edu.curtin.app.datacontroller.emergencies.FireEmergency initialize
-INFO: Fire High Intensity : Casualty
-Jun 03, 2022 1:42:07 PM edu.curtin.app.datacontroller.emergencies.FireEmergency initialize
-INFO: Fire High Intensity : Damage
-Jun 03, 2022 1:42:09 PM edu.curtin.app.datacontroller.emergencies.FireEmergency initialize
-INFO: Fire High Intensity : Casualty
-Jun 03, 2022 1:42:11 PM edu.curtin.app.datacontroller.emergencies.FireEmergency initialize
-INFO: Fire High Intensity : Damage
-Jun 03, 2022 1:42:12 PM edu.curtin.app.datacontroller.emergencies.FireEmergency initialize
-INFO: Fire High Intensity : Casualty
-Jun 03, 2022 1:42:17 PM edu.curtin.app.datacontroller.emergencies.FireEmergency initialize
-INFO: Fire Emergency set to : Low Intensity State
-Jun 03, 2022 1:42:17 PM edu.curtin.app.datacontroller.emergencies.FireEmergency initialize
-INFO: Fire Emergency has ended
-Jun 03, 2022 1:42:17 PM edu.curtin.app.datacontroller.emergencies.FireEmergency initialize
-INFO: Fire Emergency set to : Idle State
-Jun 03, 2022 1:42:17 PM edu.curtin.app.datacontroller.emergencies.FireEmergency initialize
-INFO: Fire Emergency Total Casualties : 7
-Jun 03, 2022 1:42:17 PM edu.curtin.app.datacontroller.emergencies.FireEmergency initialize
-INFO: Fire Emergency Total Damages : 6
-Jun 03, 2022 1:42:17 PM edu.curtin.app.datacontroller.emergencies.FloodEmergency <init>
-INFO: New Flood Emergency created with : 240	flood	Hill Valley 
-Jun 03, 2022 1:42:17 PM edu.curtin.app.datacontroller.emergencies.FloodEmergency initialize
-INFO: Flood Emergency set to : Running State
-Jun 03, 2022 1:42:17 PM edu.curtin.app.datacontroller.emergencies.FloodEmergency initialize
-INFO: Flood has started
-Jun 03, 2022 1:42:18 PM edu.curtin.app.datacontroller.emergencies.FloodEmergency initialize
-INFO: Flood : Casualty
-Jun 03, 2022 1:42:23 PM edu.curtin.app.datacontroller.emergencies.FloodEmergency initialize
-INFO: Flood : Damage
-Jun 03, 2022 1:42:24 PM edu.curtin.app.datacontroller.emergencies.FloodEmergency initialize
-INFO: Flood : Casualty
-Jun 03, 2022 1:42:27 PM edu.curtin.app.datacontroller.emergencies.FloodEmergency initialize
-INFO: Flood : Casualty
-Jun 03, 2022 1:42:29 PM edu.curtin.app.datacontroller.emergencies.FloodEmergency initialize
-INFO: Flood : Damage
-Jun 03, 2022 1:42:32 PM edu.curtin.app.datacontroller.emergencies.FloodEmergency initialize
-INFO: Flood : Damage
-Jun 03, 2022 1:42:40 PM edu.curtin.app.datacontroller.emergencies.FloodEmergency initialize
-INFO: Flood : Casualty
-Jun 03, 2022 1:42:43 PM edu.curtin.app.datacontroller.emergencies.FloodEmergency initialize
-INFO: Flood : Damage
-Jun 03, 2022 1:42:46 PM edu.curtin.app.datacontroller.emergencies.FloodEmergency initialize
-INFO: Flood : Casualty
-Jun 03, 2022 1:42:47 PM edu.curtin.app.datacontroller.emergencies.FloodEmergency initialize
-INFO: Flood : Casualty
-Jun 03, 2022 1:42:48 PM edu.curtin.app.datacontroller.emergencies.FloodEmergency initialize
-INFO: Flood Emergency has ended

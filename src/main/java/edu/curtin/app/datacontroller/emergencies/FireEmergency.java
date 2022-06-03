@@ -54,7 +54,7 @@ public class FireEmergency extends EmergencySimulator{
                 throw new IncorrectEmergencyType("Incorrect Emergency Type has been passed to the Fire Emergency State");
             }else{
                 ResponderComm responderComm = new ResponderCommImpl();
-                List<String> pollResult = null;
+                List<String> pollResult;
                 fireLogger.info("Fire has started");
                 responderComm.send("fire start "+location);
                 int casualtyCount = 0;
@@ -184,12 +184,6 @@ public class FireEmergency extends EmergencySimulator{
 
     @Override
     public void high_Intensity() {
-        int running = 0;
-        if(Math.random()==0){
-            running = FIRE_LOW_TO_HIGH_TIME;
-        }else{
-            running = FIRE_HIGH_TO_LOW_TIME;
-        }
 
     }
 

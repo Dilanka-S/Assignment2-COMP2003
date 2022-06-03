@@ -3,7 +3,7 @@ package edu.curtin.app.userinterface;
 public class Banners {
     public static void welcomeBanner(){
         System.out.println("\033[34m+ ---------------------------- +\033[m");
-        System.out.println("\033[32m|          WELCOME TO          |");
+        System.out.println("\033[35m|          WELCOME TO          |");
         System.out.println("|              THE             |\033[m");
         System.out.println("|  \033[31mNATURAL DISASTER \033[31mSIMULATOR\033[m  |");
         System.out.println("\033[34m+ ---------------------------- +\033[m\n");

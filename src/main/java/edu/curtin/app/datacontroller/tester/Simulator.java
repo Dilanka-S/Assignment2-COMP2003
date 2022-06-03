@@ -1,9 +1,7 @@
 package edu.curtin.app.datacontroller.tester;
 
-import edu.curtin.app.datacontroller.emergencies.ChemicalEmergency;
+
 import edu.curtin.app.datacontroller.emergencies.EmergencySimulator;
-import edu.curtin.app.datacontroller.emergencies.FireEmergency;
-import edu.curtin.app.datacontroller.emergencies.FloodEmergency;
 import edu.curtin.app.model.Emergency;
 import edu.curtin.app.model.EmergencyList;
 
@@ -16,7 +14,7 @@ public class Simulator {
     List<Emergency> emergencyList;
     EmergencySimulator emergencySimulator;
     public Simulator(List<Emergency> emergencyList) {
-        EmergencySimulator emergencySimulator;
+        //EmergencySimulator emergencySimulator;
         this.emergencyList = emergencyList;
         //this.emergencySimulator = emergencySimulator;
     }
@@ -30,13 +28,13 @@ public class Simulator {
         //System.out.println("Testing worksss");
         int time;
         String type, location;
-        for (int i = 0; i < emergencies.size(); i++) {
+        for (Emergency emergency : emergencies) {
             //System.out.println("Time : "+emergencies.get(i).getTime()+"\tType : "+emergencies.get(i).getEmergencyType()+
-                   // "\tLocation : "+emergencies.get(i).getLocation());
-            time = emergencies.get(i).getTime();
-            type = emergencies.get(i).getEmergencyType();
-            location = emergencies.get(i).getLocation();
-            distributor(time,type,location);
+            // "\tLocation : "+emergencies.get(i).getLocation());
+            time = emergency.getTime();
+            type = emergency.getEmergencyType();
+            location = emergency.getLocation();
+            distributor(time, type, location);
         }
 
     }
